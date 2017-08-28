@@ -7,12 +7,14 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
         <scene sceneID="Tdd-s0-E9Y">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n3T-gz-hqA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="dGE-01-gDg" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Wza-LK-KJb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -26,13 +28,13 @@
                         <segue destination="MG6-O0-4oV" kind="relationship" relationship="viewControllers" id="agD-hY-HId"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n3T-gz-hqA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1910" y="-857"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="N57-Zc-SRe">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t7Q-yK-c1G" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="yEw-kT-HLG" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="cNF-fb-Qk6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -55,15 +57,15 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="T2L-Rw-5VD"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="t7Q-yK-c1G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="326" y="-556"/>
         </scene>
-        <!--Item-->
+        <!--专题-->
         <scene sceneID="b67-qS-Ygx">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JoX-hm-LbK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="kuJ-u8-bnK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="42U-Ir-Wf1"/>
+                    <tabBarItem key="tabBarItem" title="专题" id="42U-Ir-Wf1"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WbA-xT-qXc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -72,13 +74,13 @@
                         <segue destination="yEw-kT-HLG" kind="relationship" relationship="rootViewController" id="JJM-oP-Weg"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JoX-hm-LbK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-641" y="-556"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="OPo-IX-a9L">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jrg-cZ-5OW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="ed1-YC-a6g" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="25v-lS-RQK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -101,15 +103,15 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="dQv-Im-X8j"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jrg-cZ-5OW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="326" y="93"/>
         </scene>
-        <!--Item-->
+        <!--我的-->
         <scene sceneID="F4h-mN-Lmk">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R1o-YC-p6R" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="MG6-O0-4oV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="vfa-0y-AM0"/>
+                    <tabBarItem key="tabBarItem" title="我的" id="vfa-0y-AM0"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4dF-oN-oQM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -118,28 +120,28 @@
                         <segue destination="ed1-YC-a6g" kind="relationship" relationship="rootViewController" id="J51-UE-Dju"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="R1o-YC-p6R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-642" y="94"/>
         </scene>
-        <!--Item-->
+        <!--博物馆-->
         <scene sceneID="mcE-K1-iK8">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DXb-XZ-krk" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="aV1-Wq-JT3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="DxA-DX-lyk"/>
+                    <tabBarItem key="tabBarItem" title="博物馆" id="DxA-DX-lyk"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DrL-E4-kBZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DXb-XZ-krk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-642" y="-1857"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="1bw-ae-7Nl">
             <objects>
-                <viewController id="pJu-AH-W5I" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m8d-YS-Csa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="pJu-AH-W5I" customClass="HomeViewController" customModule="ShanBoMuseum" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PJz-fG-RNX"/>
                         <viewControllerLayoutGuide type="bottom" id="kSB-A0-gH0"/>
@@ -177,7 +179,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Px3-3U-q5J">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Px3-3U-q5J" customClass="HomeCollectionViewCell" customModule="ShanBoMuseum" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="107" height="105"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -200,55 +202,56 @@
                         </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="m8d-YS-Csa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="325.60000000000002" y="-1857.1214392803599"/>
         </scene>
-        <!--Root View Controller-->
-        <scene sceneID="BUU-GP-Gs8">
-            <objects>
-                <tableViewController id="EGq-Ty-NVY" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="xMz-AP-4V4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="oGd-SQ-NEQ">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oGd-SQ-NEQ" id="j8s-to-szp">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="EGq-Ty-NVY" id="khk-k4-6cB"/>
-                            <outlet property="delegate" destination="EGq-Ty-NVY" id="xVk-61-HTc"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="j7E-9l-qnf"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AcU-gk-LCN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="326" y="-1209"/>
-        </scene>
-        <!--Item-->
+        <!--国家档案-->
         <scene sceneID="l86-0t-A4O">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8KC-xP-9l8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="Bdu-5m-FpP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="mPg-dt-O40"/>
+                    <tabBarItem key="tabBarItem" title="国家档案" id="mPg-dt-O40"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WUQ-Gf-Hxz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="EGq-Ty-NVY" kind="relationship" relationship="rootViewController" id="9Ob-rl-OTq"/>
+                        <segue destination="0Ku-5Y-cdm" kind="relationship" relationship="rootViewController" id="Plz-Xz-1I8"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8KC-xP-9l8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-642" y="-1209"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Wxd-Ms-uyd">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o4W-Me-14x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="0Ku-5Y-cdm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="osl-Bs-bgs"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Vy-QA-UfX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1ff-iG-D1T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MVC-Qp-s4g" customClass="FSPagerView" customModule="ShanBoMuseum" customModuleProvider="target">
+                                <rect key="frame" x="16" y="114" width="343" height="454"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MVC-Qp-s4g" firstAttribute="leading" secondItem="1ff-iG-D1T" secondAttribute="leadingMargin" id="9b1-zN-h3Z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MVC-Qp-s4g" secondAttribute="trailing" id="SRu-ZP-BoS"/>
+                            <constraint firstItem="MVC-Qp-s4g" firstAttribute="top" secondItem="osl-Bs-bgs" secondAttribute="bottom" constant="50" id="dBn-lu-pzD"/>
+                            <constraint firstItem="1Vy-QA-UfX" firstAttribute="top" secondItem="MVC-Qp-s4g" secondAttribute="bottom" constant="50" id="z86-Zc-UU4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XlP-ju-tCl"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="326" y="-1209"/>
         </scene>
     </scenes>
 </document>
