@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import FSPagerView
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var bannerView: FSPagerView!
+    @IBOutlet weak var pageControl: FSPageControl!
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

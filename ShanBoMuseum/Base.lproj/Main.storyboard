@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dGE-01-gDg">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -179,13 +179,30 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Px3-3U-q5J" customClass="HomeCollectionViewCell" customModule="ShanBoMuseum" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCellID" id="Px3-3U-q5J" customClass="HomeCollectionViewCell" customModule="ShanBoMuseum" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="107" height="105"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="107" height="105"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ft-Fd-YSh">
+                                                    <rect key="frame" x="8" y="8" width="91" height="89"/>
+                                                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="19"/>
+                                                    <color key="textColor" red="0.34117648010000001" green="0.62352943419999995" blue="0.16862745579999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="6Ft-Fd-YSh" firstAttribute="leading" secondItem="Px3-3U-q5J" secondAttribute="leadingMargin" id="KPV-UZ-zFw"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="6Ft-Fd-YSh" secondAttribute="bottom" id="ONT-ex-yhy"/>
+                                            <constraint firstItem="6Ft-Fd-YSh" firstAttribute="top" secondItem="Px3-3U-q5J" secondAttribute="topMargin" id="jAw-al-6Pf"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="6Ft-Fd-YSh" secondAttribute="trailing" id="jbT-jI-1Bl"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="6Ft-Fd-YSh" id="OjW-eI-Njy"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -201,6 +218,11 @@
                             <constraint firstAttribute="trailing" secondItem="Qqm-jE-U6Q" secondAttribute="trailing" id="hqa-ge-6OG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bannerView" destination="hvd-fz-kSC" id="AQN-be-svN"/>
+                        <outlet property="collectionView" destination="Qqm-jE-U6Q" id="Ms1-mS-nWh"/>
+                        <outlet property="pageControl" destination="Z0b-lG-yso" id="cXs-eW-9qY"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="325.60000000000002" y="-1857.1214392803599"/>

@@ -10,4 +10,7 @@ import UIKit
 
 class HomeCollectionViewCell: UICollectionViewCell {
     
+    static let cellID = "HomeCellID"
+    
+    @IBOutlet weak var titleLabel: UILabel!
 }
