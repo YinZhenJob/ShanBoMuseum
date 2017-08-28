@@ -77,11 +77,11 @@ class Home {
         func pushTheView() -> String {
             switch self {
             case .HomePage:
-                return "http://www.sxhm.com"
+                return "http://m.sxhm.com/wap/"
             case .HomeDesc:
                 return "http://www.sxhm.com/index.php?ac=article&at=list&tid=230"
             case .HeJiaCun:
-                return ""
+                return "http://www.sxhm.com/index.php?ac=article&at=read&did=10692"
             case .HeJiaCunYaoCang:
                 return ""
             }

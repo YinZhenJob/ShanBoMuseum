@@ -65,6 +65,18 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         return  collectionArray.count
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        // 跳转到相应的详情页面 H5 展示
+        let webVC = DetailViewController()
+        webVC.webSite = collectionArray[indexPath.row].pushTheView()
+        webVC.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(webVC, animated: true)
+        
+        
+        // 跳转到 何家村
+    }
+    
     
 }
 
@@ -83,7 +95,9 @@ extension HomeViewController: FSPagerViewDelegate, FSPagerViewDataSource {
     
     func pagerView(_ pagerView: FSPagerView, didSelectItemAt index: Int) {
         // 跳转到新的页面
-        
+        let webVC = DetailViewController()
+        webVC.webSite = bannerArray[index].websiteUrl
+        navigationController?.pushViewController(webVC, animated: true)
     }
     
     func pagerViewDidScroll(_ pagerView: FSPagerView) {

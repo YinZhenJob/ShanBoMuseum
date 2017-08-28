@@ -247,10 +247,10 @@
             </objects>
             <point key="canvasLocation" x="-642" y="-1209"/>
         </scene>
-        <!--View Controller-->
+        <!--Goods View Controller-->
         <scene sceneID="Wxd-Ms-uyd">
             <objects>
-                <viewController id="0Ku-5Y-cdm" sceneMemberID="viewController">
+                <viewController id="0Ku-5Y-cdm" customClass="GoodsViewController" customModule="ShanBoMuseum" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="osl-Bs-bgs"/>
                         <viewControllerLayoutGuide type="bottom" id="1Vy-QA-UfX"/>
@@ -273,6 +273,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XlP-ju-tCl"/>
+                    <connections>
+                        <outlet property="bannerView" destination="MVC-Qp-s4g" id="5FT-is-Eqg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o4W-Me-14x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
