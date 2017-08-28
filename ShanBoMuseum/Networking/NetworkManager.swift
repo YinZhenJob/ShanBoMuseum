@@ -17,14 +17,14 @@ class NetworkManager {
     /// - Parameters:
     ///   - success: 成功返回的结果
     ///   - error: 失败返回的结果
-    class func requestHomeBanner(success: @escaping ([HomeModel])->Void, error: @escaping (Error)->Void ) {
+    class func requestHomeBanner(success: @escaping ([Home.Model])->Void, error: @escaping (Error)->Void ) {
         
         let url = URL.init(string: "http://www.sxhm.com")
         Alamofire.request(url!).responseData { (responseData) in
             
             if let data = responseData.data {
                 
-                HomeModel.loadModel(data: data, block: { (modelArray) in
+                Home.Model.loadModel(data: data, block: { (modelArray) in
                     success(modelArray)
                 })
             } else {
