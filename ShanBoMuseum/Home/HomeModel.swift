@@ -10,7 +10,7 @@ import UIKit
 
 class HomeModel: NSObject {
 
-    
+    var websiteUrl: String?
     var imageUrl: String?
     var title: String?
     var id: String?
@@ -53,5 +53,14 @@ extension HomeModel: XMLParserDelegate {
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         print("end:\t\t eleName:\(elementName) \t nameURI: \(namespaceURI ?? "nil") \t qName:\(qName ?? "nil") \n\n")
         
+    }
+    
+    func parser(_ parser: XMLParser, foundCharacters string: String) {
+        <#code#>
+    }
+    
+    
+    func parser(_ parser: XMLParser, parseErrorOccurred parseError: Error) {
+        print(parseError.localizedDescription)
     }
 }
