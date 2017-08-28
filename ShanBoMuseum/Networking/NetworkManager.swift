@@ -7,3 +7,49 @@
 //
 
 import Foundation
+import Alamofire
+
+class NetworkManager {
+
+    
+    /// 请求首页banner的数据
+    ///
+    /// - Parameters:
+    ///   - success: 成功返回的结果
+    ///   - error: 失败返回的结果
+    class func requestHomeBanner(success: @escaping ([HomeModel])->Void, error: @escaping (Error)->Void ) {
+        
+        let url = URL.init(string: "http://www.sxhm.com")
+        Alamofire.request(url!).responseData { (responseData) in
+            
+            if let data = responseData.data {
+                
+                HomeModel.loadModel(data: data, block: { (modelArray) in
+                    success(modelArray)
+                })
+            } else {
+                error(responseData.error!)
+            }
+        }
+    }
+    
+    
+    /// 请求国家珍品的数据
+    ///
+    /// - Parameters:
+    ///   - success: 成功返回的结果
+    ///   - error: 失败返回的结果
+    class func requestGoods(success: @escaping (Data)->Void, error: @escaping (Error)->Void ) {
+        
+        let url = URL.init(string: "http://www.sxhm.com")
+        Alamofire.request(url!).responseData { (responseData) in
+            if let data = responseData.data {
+                success(data)
+            } else {
+                error(responseData.error!)
+            }
+        }
+    }
+    
+    
+}
