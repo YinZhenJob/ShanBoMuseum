@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		49DC5F3843F3D6E18C3C69FF /* Pods_ShanBoMuseum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6FB765DA276CD0AD742A2C1 /* Pods_ShanBoMuseum.framework */; };
 		9A2C9F591F53EF3300715F4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C9F581F53EF3300715F4B /* AppDelegate.swift */; };
-		9A2C9F5B1F53EF3300715F4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C9F5A1F53EF3300715F4B /* ViewController.swift */; };
 		9A2C9F5E1F53EF3300715F4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2C9F5C1F53EF3300715F4B /* Main.storyboard */; };
 		9A2C9F601F53EF3300715F4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A2C9F5F1F53EF3300715F4B /* Assets.xcassets */; };
 		9A2C9F631F53EF3300715F4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2C9F611F53EF3300715F4B /* LaunchScreen.storyboard */; };
+		9A2C9F6E1F53F34400715F4B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C9F6D1F53F34400715F4B /* HomeViewController.swift */; };
+		9A2C9F701F53F36F00715F4B /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C9F6F1F53F36F00715F4B /* HomeCollectionViewCell.swift */; };
+		9A2C9F721F53F3A100715F4B /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C9F711F53F3A100715F4B /* HomeModel.swift */; };
+		9A2C9F771F53F3E900715F4B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C9F761F53F3E900715F4B /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B843F21894DDF8BE726A871 /* Pods-ShanBoMuseum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShanBoMuseum.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShanBoMuseum/Pods-ShanBoMuseum.release.xcconfig"; sourceTree = "<group>"; };
 		9A2C9F551F53EF3300715F4B /* ShanBoMuseum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShanBoMuseum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2C9F581F53EF3300715F4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9A2C9F5A1F53EF3300715F4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9A2C9F5D1F53EF3300715F4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A2C9F5F1F53EF3300715F4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A2C9F621F53EF3300715F4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A2C9F641F53EF3300715F4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A2C9F6D1F53F34400715F4B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9A2C9F6F1F53F36F00715F4B /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		9A2C9F711F53F3A100715F4B /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		9A2C9F761F53F3E900715F4B /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		CAD757898CED182392F5649F /* Pods-ShanBoMuseum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShanBoMuseum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShanBoMuseum/Pods-ShanBoMuseum.debug.xcconfig"; sourceTree = "<group>"; };
 		E6FB765DA276CD0AD742A2C1 /* Pods_ShanBoMuseum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShanBoMuseum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -79,13 +85,32 @@
 			isa = PBXGroup;
 			children = (
 				9A2C9F581F53EF3300715F4B /* AppDelegate.swift */,
-				9A2C9F5A1F53EF3300715F4B /* ViewController.swift */,
-				9A2C9F5C1F53EF3300715F4B /* Main.storyboard */,
+				9A2C9F6C1F53F34400715F4B /* Home */,
+				9A2C9F751F53F3E900715F4B /* Networking */,
 				9A2C9F5F1F53EF3300715F4B /* Assets.xcassets */,
+				9A2C9F5C1F53EF3300715F4B /* Main.storyboard */,
 				9A2C9F611F53EF3300715F4B /* LaunchScreen.storyboard */,
 				9A2C9F641F53EF3300715F4B /* Info.plist */,
 			);
 			path = ShanBoMuseum;
+			sourceTree = "<group>";
+		};
+		9A2C9F6C1F53F34400715F4B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9A2C9F6D1F53F34400715F4B /* HomeViewController.swift */,
+				9A2C9F6F1F53F36F00715F4B /* HomeCollectionViewCell.swift */,
+				9A2C9F711F53F3A100715F4B /* HomeModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9A2C9F751F53F3E900715F4B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9A2C9F761F53F3E900715F4B /* NetworkManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A2C9F5B1F53EF3300715F4B /* ViewController.swift in Sources */,
+				9A2C9F721F53F3A100715F4B /* HomeModel.swift in Sources */,
 				9A2C9F591F53EF3300715F4B /* AppDelegate.swift in Sources */,
+				9A2C9F771F53F3E900715F4B /* NetworkManager.swift in Sources */,
+				9A2C9F6E1F53F34400715F4B /* HomeViewController.swift in Sources */,
+				9A2C9F701F53F36F00715F4B /* HomeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +409,7 @@
 				9A2C9F691F53EF3300715F4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
