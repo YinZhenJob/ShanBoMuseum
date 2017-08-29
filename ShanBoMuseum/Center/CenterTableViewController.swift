@@ -9,9 +9,6 @@
 import UIKit
 
 class CenterTableViewController: UITableViewController {
-    
-    let rowArray = ["意见反馈","设置","帮助"]
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,14 +16,9 @@ class CenterTableViewController: UITableViewController {
         title = "我的"
     }
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+            print("select: \(indexPath.row)")
     }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return rowArray.count
-    }
-
+    
 }

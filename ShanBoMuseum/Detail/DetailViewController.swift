@@ -13,7 +13,16 @@ class DetailViewController: UIViewController {
     
     var webSite: String? {
         didSet {
-            self.webView.load(URLRequest.init(url: URL.init(string: webSite!)!))
+            
+            if webSite == "何家村窑藏" {
+                let path = Bundle.main.path(forResource: "何家村窑藏", ofType: "html")
+                let imagsPath = Bundle.main.bundleURL
+                
+                
+                self.webView.loadFileURL(URL.init(fileURLWithPath: path!), allowingReadAccessTo:imagsPath)
+            } else {
+                self.webView.load(URLRequest.init(url: URL.init(string: webSite!)!))
+            }
         }
     }
     

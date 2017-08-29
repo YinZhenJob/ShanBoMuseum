@@ -47,11 +47,11 @@ class Home {
             case .HomePage:
                 return "http://m.sxhm.com/wap/"
             case .HomeDesc:
-                return "http://www.sxhm.com/index.php?ac=article&at=list&tid=230"
+                return "http://m.sxhm.com/wap/index.php?ac=article&at=list&tid=48"
             case .HeJiaCun:
-                return "http://www.sxhm.com/index.php?ac=article&at=read&did=10692"
+                return "http://m.sxhm.com/wap/index.php?ac=article&at=read&did=205"
             case .HeJiaCunYaoCang:
-                return ""
+                return "何家村窑藏"
             }
         }
     }
@@ -66,24 +66,24 @@ extension Home.Model {
     /// - Returns: 四个默认的数据
     class func defalutModels() -> [Home.Model] {
         let model1 = Home.Model()
-        model1.websiteUrl = "http://www.sxhm.com/index.php?ac=article&amp&at=read&amp&did=11364"
-        model1.imageUrl   = "http://www.sxhm.com/upfile/2017/07/20170713111845_352.jpg"
-        model1.title      = "陕西历史博物馆致游客的一封信"
+        model1.websiteUrl = "http://m.sxhm.com/wap/index.php?ac=article&at=read&did=670"
+        model1.imageUrl   = "http://m.sxhm.com/upfile/2017/04/20170413112342_419.jpg"
+        model1.title      = "2017年“陕西历史文化使者”评选活动成功召开新闻发布会"
         
         let model2 = Home.Model()
-        model2.websiteUrl = "http://www.sxhm.com/index.php?ac=article&amp&at=read&amp&did=11344"
+        model2.websiteUrl = "http://m.sxhm.com/wap/index.php?ac=article&at=read&did=692"
         model2.imageUrl   = "http://www.sxhm.com/upfile/2017/06/20170608161911_463.jpg"
         model2.title      = "岁月如歌——陕西民国以来经济社会发展变迁物证展"
         
         let model3 = Home.Model()
-        model3.websiteUrl = "http://www.sxhm.com/index.php?ac=article&amp&at=read&amp&did=11288"
-        model3.imageUrl   = "http://www.sxhm.com/upfile/2017/04/20170421085716_233.jpg"
-        model3.title      = "《历博讲坛》通知"
+        model3.websiteUrl = "http://m.sxhm.com/wap/index.php?ac=article&at=read&did=652"
+        model3.imageUrl   = "http://m.sxhm.com/upfile/2017/03/20170310095352_255.jpg"
+        model3.title      = "风流清逸 萧疏奔放——吉林省博物院藏“南张北溥”书画特展"
         
         let model4 = Home.Model()
-        model4.websiteUrl = "http://www.sxhm.com/index.php?ac=article&amp&at=read&amp&did=11276"
-        model4.imageUrl   = "http://www.sxhm.com/upfile/2017/04/20170413094340_260.jpg"
-        model4.title      = "2017年“陕西历史文化使者”评选活动成功召开新闻发布会"
+        model4.websiteUrl = "http://m.sxhm.com/wap/index.php?ac=article&at=read&did=612"
+        model4.imageUrl   = "http://m.sxhm.com/upfile/2016/11/20161125152324_666.jpg"
+        model4.title      = "千年窑火 生生不息——邯郸市博物馆藏磁州窑瓷器展"
         
         return [model1,model2,model3,model4]
     }
