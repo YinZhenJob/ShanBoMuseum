@@ -33,6 +33,8 @@ class GoodsViewController: UIViewController, FSPagerViewDelegate, FSPagerViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "国家珍品"
 
         bannerView.delegate     = self
         bannerView.dataSource   = self

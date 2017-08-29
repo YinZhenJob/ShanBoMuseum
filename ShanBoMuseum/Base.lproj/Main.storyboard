@@ -31,7 +31,7 @@
             </objects>
             <point key="canvasLocation" x="-1910" y="-857"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Special View Controller-->
         <scene sceneID="N57-Zc-SRe">
             <objects>
                 <tableViewController id="yEw-kT-HLG" customClass="SpecialViewController" customModule="ShanBoMuseum" customModuleProvider="target" sceneMemberID="viewController">
@@ -80,7 +80,7 @@
                             <outlet property="delegate" destination="yEw-kT-HLG" id="IHF-na-DQX"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="T2L-Rw-5VD"/>
+                    <navigationItem key="navigationItem" id="T2L-Rw-5VD"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t7Q-yK-c1G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -90,7 +90,7 @@
         <scene sceneID="b67-qS-Ygx">
             <objects>
                 <navigationController id="kuJ-u8-bnK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="专题" id="42U-Ir-Wf1"/>
+                    <tabBarItem key="tabBarItem" title="专题" image="specail" id="42U-Ir-Wf1"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WbA-xT-qXc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -103,10 +103,10 @@
             </objects>
             <point key="canvasLocation" x="-641" y="-556"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Center Table View Controller-->
         <scene sceneID="OPo-IX-a9L">
             <objects>
-                <tableViewController id="ed1-YC-a6g" sceneMemberID="viewController">
+                <tableViewController id="ed1-YC-a6g" customClass="CenterTableViewController" customModule="ShanBoMuseum" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="default" rowHeight="161" sectionHeaderHeight="28" sectionFooterHeight="28" id="25v-lS-RQK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -204,7 +204,7 @@
                             <outlet property="delegate" destination="ed1-YC-a6g" id="OeQ-m2-rdp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="dQv-Im-X8j"/>
+                    <navigationItem key="navigationItem" id="dQv-Im-X8j"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jrg-cZ-5OW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -214,7 +214,7 @@
         <scene sceneID="F4h-mN-Lmk">
             <objects>
                 <navigationController id="MG6-O0-4oV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我的" id="vfa-0y-AM0"/>
+                    <tabBarItem key="tabBarItem" title="我的" image="center" id="vfa-0y-AM0"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4dF-oN-oQM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -231,7 +231,7 @@
         <scene sceneID="mcE-K1-iK8">
             <objects>
                 <navigationController id="aV1-Wq-JT3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="博物馆" id="DxA-DX-lyk"/>
+                    <tabBarItem key="tabBarItem" title="博物馆" image="museum" id="DxA-DX-lyk"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DrL-E4-kBZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -334,11 +334,11 @@
             </objects>
             <point key="canvasLocation" x="325.60000000000002" y="-1857.1214392803599"/>
         </scene>
-        <!--国家档案-->
+        <!--国家珍品-->
         <scene sceneID="l86-0t-A4O">
             <objects>
                 <navigationController id="Bdu-5m-FpP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="国家档案" id="mPg-dt-O40"/>
+                    <tabBarItem key="tabBarItem" title="国家珍品" image="files" id="mPg-dt-O40"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WUQ-Gf-Hxz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -386,4 +386,10 @@
             <point key="canvasLocation" x="326" y="-1209"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="center" width="32" height="32"/>
+        <image name="files" width="32" height="32"/>
+        <image name="museum" width="32" height="32"/>
+        <image name="specail" width="32" height="26"/>
+    </resources>
 </document>

@@ -16,6 +16,7 @@ class CenterTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "我的"
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {

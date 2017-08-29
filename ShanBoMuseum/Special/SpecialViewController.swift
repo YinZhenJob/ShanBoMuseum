@@ -15,6 +15,8 @@ class SpecialViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "专题"
 
     }
     
