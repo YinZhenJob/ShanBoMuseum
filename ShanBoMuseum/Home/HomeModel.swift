@@ -17,38 +17,6 @@ class Home {
         var imageUrl: String?
         var title: String?
         
-        
-        /// 默认写死的数据
-        ///
-        /// - Returns: 四个默认的数据
-        class func defalutModels() -> [Model] {
-            let model1 = Model()
-            model1.websiteUrl = "http://www.sxhm.com/index.php?ac=article&amp&at=read&amp&did=11364"
-            model1.imageUrl   = "http://www.sxhm.com/upfile/2017/07/20170713111845_352.jpg"
-            model1.title      = ""
-            
-            let model2 = Model()
-            model2.websiteUrl = "http://www.sxhm.com/index.php?ac=article&amp;at=read&amp;did=11344"
-            model2.imageUrl   = "http://www.sxhm.com/upfile/2017/06/20170608161911_463.jpg"
-            model2.title      = ""
-            
-            let model3 = Model()
-            model3.websiteUrl = "http://www.sxhm.com/index.php?ac=article&amp;at=read&amp;did=11288"
-            model3.imageUrl   = "http://www.sxhm.com/upfile/2017/04/20170421085716_233.jpg"
-            model3.title      = ""
-            
-            let model4 = Model()
-            model4.websiteUrl = "http://www.sxhm.com/index.php?ac=article&amp;at=read&amp;did=11276"
-            model4.imageUrl   = "http://www.sxhm.com/upfile/2017/04/20170413094340_260.jpg"
-            model4.title      = ""
-            
-            return [model1,model2,model3,model4]
-        }
-        
-        class func loadModel(data: Data, block: @escaping ([Model])-> Void) {
-            block(self.defalutModels())
-        }
-        
     }
     
     
@@ -90,6 +58,41 @@ class Home {
 }
 
 
+
+extension Home.Model {
+    
+    /// 默认写死的数据
+    ///
+    /// - Returns: 四个默认的数据
+    class func defalutModels() -> [Home.Model] {
+        let model1 = Home.Model()
+        model1.websiteUrl = "http://www.sxhm.com/index.php?ac=article&amp&at=read&amp&did=11364"
+        model1.imageUrl   = "http://www.sxhm.com/upfile/2017/07/20170713111845_352.jpg"
+        model1.title      = "陕西历史博物馆致游客的一封信"
+        
+        let model2 = Home.Model()
+        model2.websiteUrl = "http://www.sxhm.com/index.php?ac=article&amp&at=read&amp&did=11344"
+        model2.imageUrl   = "http://www.sxhm.com/upfile/2017/06/20170608161911_463.jpg"
+        model2.title      = "岁月如歌——陕西民国以来经济社会发展变迁物证展"
+        
+        let model3 = Home.Model()
+        model3.websiteUrl = "http://www.sxhm.com/index.php?ac=article&amp&at=read&amp&did=11288"
+        model3.imageUrl   = "http://www.sxhm.com/upfile/2017/04/20170421085716_233.jpg"
+        model3.title      = "《历博讲坛》通知"
+        
+        let model4 = Home.Model()
+        model4.websiteUrl = "http://www.sxhm.com/index.php?ac=article&amp&at=read&amp&did=11276"
+        model4.imageUrl   = "http://www.sxhm.com/upfile/2017/04/20170413094340_260.jpg"
+        model4.title      = "2017年“陕西历史文化使者”评选活动成功召开新闻发布会"
+        
+        return [model1,model2,model3,model4]
+    }
+    
+    class func loadModel(data: Data, block: @escaping ([Home.Model])-> Void) {
+        block(self.defalutModels())
+    }
+
+}
 
 
 

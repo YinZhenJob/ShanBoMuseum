@@ -21,6 +21,7 @@ class HomeViewController: UIViewController {
             self.bannerView.register(FSPagerViewCell.self, forCellWithReuseIdentifier: bannerCellID)
             self.bannerView.itemSize = .zero
             self.bannerView.isInfinite = true
+            self.bannerView.automaticSlidingInterval = 3
         }
     }
 

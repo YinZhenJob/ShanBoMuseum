@@ -34,19 +34,45 @@
         <!--Root View Controller-->
         <scene sceneID="N57-Zc-SRe">
             <objects>
-                <tableViewController id="yEw-kT-HLG" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="cNF-fb-Qk6">
+                <tableViewController id="yEw-kT-HLG" customClass="SpecialViewController" customModule="ShanBoMuseum" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="156" sectionHeaderHeight="28" sectionFooterHeight="28" id="cNF-fb-Qk6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="wxl-Gl-mU9">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SpecailTableViewCellID" rowHeight="156" id="wxl-Gl-mU9" customClass="SpecialTableViewCell" customModule="ShanBoMuseum" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="156"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wxl-Gl-mU9" id="kKZ-Np-UWd">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="155"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J2i-tk-33L">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="155"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsV-48-zyy">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="155"/>
+                                            <color key="backgroundColor" red="0.79152440224155596" green="0.7877006128587466" blue="0.79534819162436543" alpha="0.34985017123287682" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="18"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="J2i-tk-33L" secondAttribute="bottom" id="CMe-eg-H2R"/>
+                                        <constraint firstItem="zsV-48-zyy" firstAttribute="leading" secondItem="kKZ-Np-UWd" secondAttribute="leading" id="TIn-AB-Z7r"/>
+                                        <constraint firstAttribute="trailing" secondItem="zsV-48-zyy" secondAttribute="trailing" id="UQ4-cP-QNM"/>
+                                        <constraint firstItem="zsV-48-zyy" firstAttribute="top" secondItem="kKZ-Np-UWd" secondAttribute="top" id="bZr-51-AX9"/>
+                                        <constraint firstItem="J2i-tk-33L" firstAttribute="top" secondItem="kKZ-Np-UWd" secondAttribute="top" id="cyz-QR-INl"/>
+                                        <constraint firstAttribute="bottom" secondItem="zsV-48-zyy" secondAttribute="bottom" id="hij-E3-Vko"/>
+                                        <constraint firstAttribute="trailing" secondItem="J2i-tk-33L" secondAttribute="trailing" id="lhT-eq-235"/>
+                                        <constraint firstItem="J2i-tk-33L" firstAttribute="leading" secondItem="kKZ-Np-UWd" secondAttribute="leading" id="w4D-Ya-56p"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bgImageView" destination="J2i-tk-33L" id="dJA-h8-imD"/>
+                                    <outlet property="spTitleLabel" destination="zsV-48-zyy" id="fA1-TZ-N3W"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -58,7 +84,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t7Q-yK-c1G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="326" y="-556"/>
+            <point key="canvasLocation" x="325.60000000000002" y="-556.37181409295351"/>
         </scene>
         <!--专题-->
         <scene sceneID="b67-qS-Ygx">
@@ -184,7 +210,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ft-Fd-YSh">
-                                                    <rect key="frame" x="8" y="8" width="135" height="121"/>
+                                                    <rect key="frame" x="8" y="8" width="134" height="121"/>
                                                     <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="19"/>
                                                     <color key="textColor" red="0.34117648010000001" green="0.62352943419999995" blue="0.16862745579999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
