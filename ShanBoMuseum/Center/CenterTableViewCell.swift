@@ -20,11 +20,19 @@ class CenterTableViewCell: UITableViewCell {
             headImageView.layer.cornerRadius = radius
             headImageView.layer.masksToBounds = true
             
-            headImageView.layer.borderColor = UIColor.black.cgColor
+            headImageView.layer.borderColor = UIColor.init(white: 0.7, alpha: 0.7).cgColor
             headImageView.layer.borderWidth = 0.5
         }
     }
     
-    @IBOutlet weak var loginButton: UIButton!
-
+    @IBOutlet weak var loginButton: UIButton! {
+    
+        didSet {
+            loginButton.addTarget(self, action: #selector(login), for: .touchUpInside)
+        }
+    }
+    
+    @objc func login() {
+        UIAlertView.init(title: "注册|登录", message: "抱歉，还没搭建服务器", delegate: self, cancelButtonTitle: "明白了").show()
+    }
 }
